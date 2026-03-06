@@ -13,6 +13,9 @@ public class TestCylinder1 {
             cy1.getClass(), cy1.getHeight(), cy1.getRadius(), cy1.getColor(), cy1.getArea(), cy1.getVolume());
 
         // add extra code below 
+        double surfaceArea = (2* cy1.getArea()) + (2 * Math.PI*cy1.getRadius() * cy1.getHeight());
+        double baseArea = cy1.getArea();
+        System.out.printf("Surface Area: %.2f, Base Area: %.2f\n", surfaceArea, baseArea);
 
     }
 }   
